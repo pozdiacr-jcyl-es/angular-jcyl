@@ -1,1 +1,19 @@
 <p>solicitud works!</p>
+
+{{solicitud.nombre}}
+{{solicitud.apellido1}}
+{{solicitud.apellido2}}
+
+<p [style.color]="+solicitud.nombre > 0.5 ? 'red' : 'blue'">solicitud works!</p>
+
+<button (click)="pulsar($event);">Pulsar</button>
+
+<p></p>
+
+<label>Apellido 1</label>
+<input (keyup)="apellido1($event)">
+
+<p></p>
+
+<label>Apellido 2</label>
+<input (keyup)="apellido2($event)">
